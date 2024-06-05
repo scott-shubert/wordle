@@ -90,7 +90,7 @@ export default function App() {
 	return (
 		<>
 			<div className='header'>
-				<div>Wordle</div>
+				<div>Wordle 2</div>
 			</div>
 			<div className='game'>
 				<Board guesses={guesses} nextGuess={guess} />

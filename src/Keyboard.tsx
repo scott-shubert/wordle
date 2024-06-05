@@ -19,7 +19,8 @@ export default function Keyboard({
 	}
 
 	useEffect(() => {
-		function onKeyDown(event) {
+		// @ts-expect-error description
+		function onKeyDown(event): void {
 			if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) {
 				return
 			}

@@ -29,7 +29,7 @@ export default function Board({
 		])
 	}, [nextGuess])
 
-	const getClassName = (value: Letter, index: number) => {
+	const getClassName = (value: Letter) => {
 		if (value.status !== '') {
 			return value.status + ' letter space'
 		}
@@ -40,7 +40,7 @@ export default function Board({
 		<div className='board'>
 			{spaces.map((value, index) => {
 				return (
-					<div key={'space-' + index} className={getClassName(value, index)}>
+					<div key={'space-' + index} className={getClassName(value)}>
 						<span>{value.char}</span>
 					</div>
 				)

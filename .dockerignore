@@ -1,0 +1,14 @@
+.gitignore
+.github
+.git
+src
+node_modules
+*.md
+vite.config.ts
+dockerfile
+.dockerignore
+package-lock.json
+tsconfig.json
+tsconfig.node.json
+.eslintrc.cjs
+index.html
